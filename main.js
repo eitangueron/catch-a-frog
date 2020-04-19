@@ -5,21 +5,57 @@ $('#control-panel').append('<button id="start-btn">start!</button>')
 $('#control-panel').append('<span id="level">level X</span>')
 
 
-lettersArry = ['a','b', 'c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y']
+// lettersArry = ['a','b', 'c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y']
  
-const getRandomNumber = function(min, max) {
-    return Math.floor(Math.random() * (max - min) + min)
+// const getRandomNumber = function(min, max) {
+//     return Math.floor(Math.random() * (max - min) + min)
+// }
+
+// const getRandomLocation = function(){
+//     return lettersArry[getRandomNumber(0,lettersArry.length+1)]
+// }
+
+const getRandomNumber = function(toprange){   //start 1
+    return Math.ceil(Math.random()*toprange)
 }
 
-const getRandomLocation = function(){
-    return lettersArry[getRandomNumber(0,lettersArry.length+1)]
+
+
+const renderFrogs = function(times){
+    for(let i= 0;i<times; i++ ){
+        $('#main-container').append(`<i class="fas fa-frog" id="frog${i+1}"></i>`)
+        $(`#frog${i+1}`).css('grid-area',`${getRandomNumber(5)}/${getRandomNumber(5)}`)
+    }
 }
 
-$('#main-container').append('<i class="fas fa-frog" id="frog"></i>')
-// $('#frog').css('font-size','50px')
 
-$('#frog').css('grid-area',getRandomLocation())
 
-$('#main-container').on('click','#frog',function(){
-    $(this).remove()
+
+let level = 1
+
+$('#start-btn').on('click',function(){
+
+    $('#main-container').text('')
+    
+    level = 1
+
+    $('#main-container').on('click','i',function(){
+        $(this).remove()
+        if($('i').length ===0){
+            level++
+            renderFrogs(level)
+        }
+    })
+    
+    renderFrogs(level)
+    
+    setTimeout(function(){
+        $('#main-container').text('')
+        $('#main-container').append("<h1 id='end-time'>Time over!</h1>")
+        $('#end-time').css('grid-area','3/3')
+    }
+    ,5000)
 })
+
+
+

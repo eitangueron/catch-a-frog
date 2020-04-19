@@ -26,12 +26,12 @@ body{
     align-items: center;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(5,1fr);
-    grid-template-areas: 
+    /* grid-template-areas: 
     "a b c d e"
     "f g h i j "
     "k l m n o "
     "p q r s t "
-    "u v w x y ";    /* notice: without Z ! */
+    "u v w x y ";    notice: without Z ! */
 }
 
 #control-panel{
@@ -54,4 +54,8 @@ button{
 i{
     font-size: 50px;
     cursor: pointer;
+}
+
+#end-time{
+    font-size: 40px;
 }
