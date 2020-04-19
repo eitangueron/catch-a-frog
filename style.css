@@ -1,0 +1,57 @@
+body{
+    display: grid;
+    grid-template-rows: 1fr 7fr 1.5fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+#time-bar{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+}
+
+#timer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 20%;
+    left: 40%;
+}
+
+#main-container{
+    background-color: azure;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "a b c d e"
+    "f g h i j "
+    "k l m n o "
+    "p q r s t "
+    "u v w x y ";    /* notice: without Z ! */
+}
+
+#control-panel{
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+span{
+    align-self: center;
+    justify-self: center;
+    font-size: xx-large;
+}
+
+button{
+    font-size: xx-large;
+    background-color: blue;
+}
+
+i{
+    font-size: 50px;
+    cursor: pointer;
+}
