@@ -1,16 +1,5 @@
 const Renderer = function(){
 
-
-    // const baseDisplay = function(){
-    //     $('#time-bar').append('<span id="timer">X seconds left!</span>')
-    //     $('#control-panel').append('<span id="frogs-left">X frogs left!</span>')
-    //     $('#control-panel').append('<button id="start-btn">start!</button>')
-    //     $('#control-panel').append('<span id="level">level X</span>')
-    // }
-    
-    const displayTime = function(time){
-        $('#timer').text(`${time} seconds left!`)
-    }
     
     
     const displayLevel =function(){
@@ -45,15 +34,22 @@ const Renderer = function(){
         displayGameOn,
         displayFrogsLeft,
         displayLevel,
-        displayTime,
-
-        // baseDisplay,
+        // displayTime,
     }
 }
 
 
 
 
+
+// baseDisplay,
+
+ // const baseDisplay = function(){
+    //     $('#time-bar').append('<span id="timer">X seconds left!</span>')
+    //     $('#control-panel').append('<span id="frogs-left">X frogs left!</span>')
+    //     $('#control-panel').append('<button id="start-btn">start!</button>')
+    //     $('#control-panel').append('<span id="level">level X</span>')
+    // }
 
 
 

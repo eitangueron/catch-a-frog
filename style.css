@@ -3,12 +3,13 @@ body{
     grid-template-rows: 1fr 7fr 1.5fr;
     height: 100vh;
     width: 100vw;
+    background-color: black;
 }
 
 #time-bar{
     height: 100%;
     width: 100%;
-    background-color: aqua;
+    background-color: forestgreen;
 }
 
 #timer{
@@ -17,11 +18,14 @@ body{
     position: relative;
     top: 20%;
     left: 40%;
+    /* color: red; */
 }
 
+
+
 #main-container{
-    background-color: azure;
-    display: grid;
+    background-color: greenyellow;
+    /* display: grid; */
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(5,1fr);
@@ -35,7 +39,7 @@ body{
 }
 
 #control-panel{
-    background-color: cadetblue;
+    background-color: forestgreen;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
@@ -48,14 +52,39 @@ span{
 
 button{
     font-size: xx-large;
-    background-color: blue;
+    background-color: yellow;
 }
 
 i{
-    font-size: 50px;
     cursor: pointer;
+    display: block;
+    font-size: 50px;
 }
 
 #end-time{
     font-size: 40px;
+}
+
+
+/* 
+@media(grid-column:1){
+    i{
+        font-size: 20px;
+    }
+} */
+
+h2{
+    margin-left: 12px;
+    font-size: 42px;
+    text-decoration: underline;
+}
+
+ul{
+    margin-left: 10px;
+    font-size: 26px;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
 }
