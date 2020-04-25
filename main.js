@@ -39,16 +39,3 @@ $('#start-btn').on('click', function () {
 
 
 
-
-
-
-//time = 3
-//set interval - if time === 0 => end game fun // else => (time --) & display time func(time)
-
-  // setTimeout(function () {
-    //     $('#main-container').text('')
-    //     $('#main-container').append("<h1 id='end-time'>Time over!</h1>")
-    //     $('#end-time').css('grid-area', '3/3')
-    //     render.displayStartAgainButton()
-    // }
-    //     , 10000)

@@ -17,25 +17,19 @@ body{
     height: 100%;
     position: relative;
     top: 20%;
+    text-align: center;
     left: 40%;
-    /* color: red; */
 }
 
 
 
 #main-container{
     background-color: greenyellow;
-    /* display: grid; */
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(5,1fr);
-    /* grid-template-areas: 
-    "a b c d e"
-    "f g h i j "
-    "k l m n o "
-    "p q r s t "
-    "u v w x y ";    notice: without Z ! */
+    
 }
 
 #control-panel{
@@ -66,13 +60,6 @@ i{
 }
 
 
-/* 
-@media(grid-column:1){
-    i{
-        font-size: 20px;
-    }
-} */
-
 h2{
     margin-left: 12px;
     font-size: 42px;
@@ -84,7 +71,20 @@ ul{
     font-size: 26px;
 }
 
-h1{
+#welcome{
     font-size: 50px;
-    text-align: center;
+    position: relative;
+    left: 39%;
+}
+
+#max-level{
+    font-size: 24px;
+    grid-area: 4/3;
+    color: red;
+}
+
+#end-time{
+    font-size: 40px;
+    grid-area: 3/3;
+    color: red;
 }

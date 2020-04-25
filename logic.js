@@ -60,11 +60,9 @@ const Brainer = function(){
     const startTimer = function(){
         let timeID = setInterval(() => {
             if(time === 0){
-                // $('#timer').text('Time over!')
                 $('#main-container').text('')
                 $('#main-container').append("<h1 id='end-time'>Time over!</h1>")
-                $('#end-time').css('grid-area', '3/3')
-                $('#end-time').css('color', 'red')
+                $('#main-container').append(`<h1 id='max-level'>You reached level:${level}</h1>`)
                 render.displayStartAgainButton()
                 clearInterval(timeID)
             } else{
@@ -96,59 +94,3 @@ const Brainer = function(){
 
 
 
-
-
-
-
-
-
-
-// const getRandomNumber = function (toprange) {   //start 1
-    //     return Math.ceil(Math.random() * toprange)
-    // }
-    
-
- // $('#main-container').append(frog)
-// $(`#frog${i + 1}`).css('grid-area', `${getRandomNumber(5)}/${getRandomNumber(5)}`)
-
-
-
-
-
-
-
-
-// let level=1
-// const frogs = []
-
-// const getRandomNumber = function (toprange) {   //start 1
-//     return Math.ceil(Math.random() * toprange)
-// }
-
-
-
-// const creatFrogs = function () {
-//     for (let i = 0; i < level; i++) {
-//         // frogs.push(`<i class="fas fa-frog" id="frog${i + 1}"></i>`)
-//         $('#main-container').append(`<i class="fas fa-frog" id="frog${i + 1}"></i>`)
-//         $(`#frog${i + 1}`).css('grid-area', `${getRandomNumber(5)}/${getRandomNumber(5)}`)
-//     }
-// }
-
-// const displayTimer = function(time){
-//     $('#timer').text(`${time} seconds left!`)
-// }
-
-// let time = 6
-
-
-
-
-
-    // setTimeout(function () {
-    //     $('#main-container').text('')
-    //     $('#main-container').append("<h1 id='end-time'>Time over!</h1>")
-    //     $('#end-time').css('grid-area', '3/3')
-    //     render.displayStartAgainButton()
-    // }
-    //     , 10000)
