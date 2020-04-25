@@ -1,0 +1,90 @@
+body{
+    display: grid;
+    grid-template-rows: 1fr 7fr 1.5fr;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+#time-bar{
+    height: 100%;
+    width: 100%;
+    background-color: forestgreen;
+}
+
+#timer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 20%;
+    text-align: center;
+    left: 40%;
+}
+
+
+
+#main-container{
+    background-color: greenyellow;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    
+}
+
+#control-panel{
+    background-color: forestgreen;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+span{
+    align-self: center;
+    justify-self: center;
+    font-size: xx-large;
+}
+
+button{
+    font-size: xx-large;
+    background-color: yellow;
+}
+
+i{
+    cursor: pointer;
+    display: block;
+    font-size: 50px;
+}
+
+#end-time{
+    font-size: 40px;
+}
+
+
+h2{
+    margin-left: 12px;
+    font-size: 42px;
+    text-decoration: underline;
+}
+
+ul{
+    margin-left: 10px;
+    font-size: 26px;
+}
+
+#welcome{
+    font-size: 50px;
+    position: relative;
+    left: 39%;
+}
+
+#max-level{
+    font-size: 24px;
+    grid-area: 4/3;
+    color: red;
+}
+
+#end-time{
+    font-size: 40px;
+    grid-area: 3/3;
+    color: red;
+}
